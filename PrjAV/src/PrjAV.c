@@ -21,13 +21,13 @@ int main(void) {
   fflush(stdout);
   scanf("%d", &portaEscolhida);
   printf("A porta escolhida foi a %d\n", portaEscolhida);
-  printf("A porta sorteada foi a %d\n", portaPremiada);
+  printf("A porta sorteada foi a %d\n", portaPremiada);  //Usado para verificar o numero gerado.
 
 
   do{
     portaVazia=rand() % 3 + 1 ;
   }
-  while(portaVazia == portaPremiada && portaVazia == portaEscolhida);
+  while(portaVazia == portaPremiada && portaVazia == portaEscolhida); //Mudado de != para == pois quando as variaveis se igualam o loop recomeça até as variáveis serem diferentes umas das outras.
 
   printf("Foi aberto a porta vazia %d\n",portaVazia);
 
@@ -42,7 +42,7 @@ int main(void) {
   } if (opcao == 's' && portaPremiada != portaEscolhida){
       printf("Você Ganhou o prêmio!");
   }  if (opcao == 'n' && portaPremiada != portaEscolhida){
-      printf("Você Ganhou o prêmio!");
+      printf("Você Ganhou o prêmio!");       // Tem um modelo mais enxuto de uitlizar o if e else nessa questão, utilizar 4 if's seguidos me fez errar o escrito da última reduzindo mais ainda meus pontos
   }
     return 0;
 }
