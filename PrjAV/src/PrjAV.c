@@ -42,7 +42,7 @@ int main(void) {
   } if (opcao == 's' && portaPremiada != portaEscolhida){
       printf("Você Ganhou o prêmio!");
   }  if (opcao == 'n' && portaPremiada != portaEscolhida){
-      printf("Você Ganhou o prêmio!");       // Tem um modelo mais enxuto de uitlizar o if e else nessa questão, utilizar 4 if's seguidos me fez errar o escrito da última reduzindo mais ainda meus pontos
+      printf("Você Perdeu o prêmio!");       // Tem um modelo mais enxuto de uitlizar o if e else nessa questão, utilizar 4 if's seguidos me fez errar o escrito da última reduzindo mais ainda meus pontos
   }
     return 0;
 }
